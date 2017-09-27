@@ -3,20 +3,17 @@ l2=[0]
 l3=[]
 l4=[]
 x=0
-
-while x < len(l1):
+num = 1
+while num != 0:
 	num = int(input('Digite o {}ª valor: '.format(x+1)))
 	x+=1
-	if num == 0:
-		break
 	l1.append(num)
 
 y=0
-while y < len(l2):
+num2 = 1
+while num2 != 0 :
 	num2 = int(input('Digite o {}ª valor: '.format(y+1)))
 	y+=1
-	if num2 == 0:
-		break
 	l2.extend([num2])
 
 """ OU

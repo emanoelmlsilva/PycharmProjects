@@ -8,6 +8,8 @@ while True:
 	print('Digite F para adicioar um cliente ao fim da fila',end=' ')
 	print('ou A para realizar o atendimento. S para sair.')
 	operaçao = input('Operação (F, A ou S):')
+	if operaçao == 'S':
+		break
 	print('A para atendimento da fila 1 e B para atendimento para fila 2')
 	atend = input('atendimento (A ou B): ')
 	print('para chegada de clientes F para fila 1 e G para fila 2')
@@ -34,7 +36,7 @@ while True:
 				filb.append(ultimob)
 				print('Cliente {} foi adicionado na fila 2'.format(ultimob))
 			else:
-				print('Invalido digite novamente')
+				print('Não à mais clientes')
 		elif operaçao[cont] == 'S':
 			sair = True
 			break
